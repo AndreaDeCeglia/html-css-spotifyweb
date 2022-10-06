@@ -333,6 +333,13 @@ a:hover{
     position: absolute;
 }
 
+.p-absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: transform(-50%, -50%);
+}
+
 .p-fixed{
     position: fixed;
     top: 0;

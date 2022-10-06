@@ -56,11 +56,20 @@ main{
     width: 70%;
 }
 
+#sidebar button{
+    width: 25px;
+    height: 25px;
+}
+
 #sidebar ul li{
     color: gray;
     margin: 5 px 0;
     text-align: center;
     padding: 1%;
+}
+
+#sidebar ul li a{
+    color: gray;
 }
 
 #sidebar ul li img{
@@ -100,7 +109,7 @@ header{
 /* *** MAIN *** */
 
 #contents{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 

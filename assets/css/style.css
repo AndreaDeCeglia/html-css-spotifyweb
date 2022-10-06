@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 #upper{
     /* height: (100vh - 50px); */
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 
@@ -64,6 +64,14 @@ main{
     height: 25px;
 }
 
+#sidebar #side-down{
+    width: 100%;
+}
+
+#side-down .fa-circle-user{
+    font-size: 1.5rem;
+}
+
 #sidebar ul li{
     color: gray;
     margin: 5 px 0;
@@ -81,6 +89,12 @@ main{
 
 #sidebar ul span{
     display: none;
+}
+
+#side-line{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
 }
 
 /* *** UPPER BAR *** */
@@ -125,13 +139,13 @@ header{
 /* *** FOOTER *** */
 
 footer{
-    /* height: 50px; */
+    height: 10%;
     background-color: #282828;
-    position: fixed;
+    /* position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 2;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 footer > div{
@@ -187,7 +201,7 @@ footer > div{
     
     #sidebar ul li img{
         width: 15%;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     #sidebar li{

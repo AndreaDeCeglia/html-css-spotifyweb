@@ -24,7 +24,7 @@
 <body>
 
     <!-- THE TOTAL CONTAINER OF WEBAPP - devided on 2 parts and in column flexed -->
-    <div id="webapp-container">
+    <div id="webapp-container" class="flex-column justify-between">
 
         <!-- UPPER PART - sidebar, upper bar and main flexed-->
         <div id="upper" class="flex-row">
@@ -37,7 +37,7 @@
                     :hover on border misses -->
                     <div id="side-up" class="padding-2">
                         <div id="home">
-                            <div id="logo-container" class="padding-2 margin20-0">
+                            <div id="logo-container" class="padding-2 margin10-0">
                                 <!-- changable logo section -->
                                 <picture>
                                     <img id="logo" src="./assets/img/logo.svg" alt="">
@@ -77,15 +77,14 @@
                                     
                                     <!-- PLAYLIST - title of high's middle list -->
                                     <li>
-                                        <span>
-                                            <button class="inline-b">
+                                        <span class="margin10-0">
+                                            <h2 class="margin10-0 txt-white">PLAYLIST</h2>
+                                            <button class="inline-b middle">
                                                 <h2>+</h2>
                                             </button>
-                                            <h2 class="inline-b margin10-0">
-                                                <a class="unstyle-a" href="">
-                                                    PLAYLIST
-                                                </a> 
-                                            </h2>
+                                            <a class="unstyle-a inline-b" href="">
+                                                <h3 class="middle">Crea Playlist</h3>
+                                            </a> 
                                         </span>
                                     </li>
                                     
@@ -154,7 +153,27 @@
                     </div>
                     
                     <!-- DOWNER PART OF SIDEBAR -->
-                    <div id="side-down"></div>
+                    <div id="side-down">
+                        <ul class="unstyle-list padding-2">
+                            <li>
+                                <i class="fa-regular fa-circle-down"></i>
+                                <span class="margin-left10">
+                                    Installa app
+                                </span>
+                            </li>
+                            <li>
+                                <span id="side-line"></span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-user"></i>
+                                <span class="margin-left10">
+                                    <h3 class="txt-white">
+                                        Topo Gigio
+                                    </h3>
+                                </span> 
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </nav>
 
@@ -162,7 +181,7 @@
             <main class="flex-column">
 
                 <!-- UPPER BAR - "flexed header" -->
-                <header class="flex-row justify-end padding-2">
+                <header class="flex-row justify-end padding-1">
 
                     <!-- UPGRADE BTN -->
                     <a id="upgrade" href="">EFFETTUA L'UPGRADE</a>

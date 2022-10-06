@@ -309,6 +309,10 @@ a:hover{
     color: white;
 }
 
+.txt-gray{
+    color: gray;
+}
+
 /* inline/inline-block */
 
 .inline-b{

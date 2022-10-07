@@ -106,6 +106,8 @@ header{
     top: 0;
     width: 100%;
     z-index: 3;
+    background-color: rgba( 0, 0, 0, 0.8 );
+    /* filter: opacity(0.2); */
 }
 
 #upgrade{
@@ -143,9 +145,24 @@ header{
     width: 100%;
 }
 
+#contents picture > .fa-circle-play{
+    font-size: 5rem;
+    display: none;
+}
+
+#contents img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#contents picture:hover .fa-circle-play{
+    display: block;
+    cursor: pointer;
+}
+
 #circle-pic{
-   width: 150px;
-   height: 150px; 
+   width: 100px;
+   height: 100px; 
 }
 
 #circle-pic .play-img#circle-img{
@@ -182,6 +199,11 @@ footer{
     overflow: hidden; */
 }
 
+footer i:hover{
+    filter: brightness(200%);
+    cursor: pointer;
+}
+
 #footer-left,
 #footer-right{
     width: 28%;
@@ -212,6 +234,11 @@ footer{
 
 #icons-center .fa-play-circle{
     font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#icons-center .fa-play-circle:hover{
+    transform: scale(1.2);
 }
 
 .player-bar{
@@ -235,11 +262,11 @@ footer{
     background-color: #fff9;
 }
 
-footer #time-count .player-bar:hover .controller-elapsed-point{
+footer .player-bar:hover .controller-elapsed-point{
     background-color: greenyellow;
 }
 
-footer #time-count .player-bar:hover .controller-elapsed .controller-elapsed-point {
+footer .player-bar:hover .controller-elapsed .controller-elapsed-point {
     position: absolute;
     top: 50%;
     right: 0;
@@ -251,7 +278,18 @@ footer #time-count .player-bar:hover .controller-elapsed .controller-elapsed-poi
     background-color: rgba(255, 255, 255, 1);
 }
 
+#footer-right i{
+    color: white;
+    font-size: 1.1rem;
+}
 
+#footer-right #audio-bar{
+    display: none;
+}
+
+#footer-right .basis-19{
+    flex-basis: 32%;
+}
 
 
 
@@ -319,8 +357,8 @@ footer #time-count .player-bar:hover .controller-elapsed .controller-elapsed-poi
 
     
     #circle-pic{
-        width: 250px;
-        height: 250px; 
+        width: 150px;
+        height: 150px; 
     }
 
     /* *** FOOTER *** */
@@ -354,8 +392,8 @@ footer #time-count .player-bar:hover .controller-elapsed .controller-elapsed-poi
 
     
     #circle-pic{
-        width: 175px;
-        height: 175px; 
+        width: 150px;
+        height: 150px; 
     }
 
     /* *** FOOTER *** */
@@ -379,6 +417,14 @@ footer #time-count .player-bar:hover .controller-elapsed .controller-elapsed-poi
 
     #icons-left{
         flex-direction: row;
+    }
+
+    #footer-right .basis-19{
+        flex-basis: 19%;
+    }
+
+    #footer-right #audio-bar{
+        display: block;
     }
 
 }
@@ -407,8 +453,8 @@ footer #time-count .player-bar:hover .controller-elapsed .controller-elapsed-poi
 
     
     #circle-pic{
-        width: 175px;
-        height: 175px; 
+        width: 150px;
+        height: 150px; 
     }
 
     /* *** FOOTER *** */

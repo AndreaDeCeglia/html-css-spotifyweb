@@ -48,13 +48,14 @@
                             <div>
                                 <ul class="unstyle-list padding-2">
                                     <!-- HOME -->
-                                    <li>
+                                    <li id="home-logo" class="p-relative">
                                         <img src="./assets/img/home.svg" alt=""> 
                                         <span>
                                             <a class="unstyle-a" href="">
                                                 Home
                                             </a> 
                                         </span>
+                                        <div id="evidence-left"></div>
                                     </li>
                                     <!-- SEARCH -->
                                     <li>
@@ -198,11 +199,12 @@
                 <div id="contents">
                     <!-- upper navbar in contents' container -->
                     <nav>
-                        <ul class="flex-row justify-center wrap unstyle-list">
-                            <li>
+                        <ul class="flex-row justify-center wrap unstyle-list margin-top80">
+                            <li class="p-relative">
                                 <a href="">
                                     IN EVIDENZA
                                 </a>
+                                <div id="evidence-bottom"></div>
                             </li>
                             <li>
                                 <a href="">
@@ -251,7 +253,7 @@
                             <div class="play flex-column justify-between align-center padding-1">
                                 <picture class="p-relative">
                                     <img class="play-img" src="./assets/img/metal_lifting.jpg" alt="">
-                                    <i class="fa-regular fa-circle-play txt-white p-absolute-center"></i>
+                                    <i class="play-s fa-regular fa-circle-play txt-white p-absolute-center"></i>
                                 </picture>
                                 <h3 class="txt-white">
                                     Heavy Metal
@@ -438,8 +440,8 @@
                         <h4 class="txt-white">
                             Sinister
                         </h4>
-                        <span class="txt-gray">
-                            Brano Nome
+                        <span>
+                            <a class="txt-gray" href="">Brano Nome</a>
                         </span>
                     </div>
                 </div>
@@ -480,6 +482,7 @@
                         <div class="controller-elasped percentual-20">
                             <div class="controller-elapsed-point"></div>
                         </div>
+                        <i class="fa-solid fa-circle txt-white"></i>
                     </div>
                     <span class="txt-gray">4:35</span>
                 </div>
@@ -501,6 +504,7 @@
                     <div class="controller-elasped percentual-20">
                         <div class="controller-elapsed-point"></div>
                     </div>
+                    <i id="right-point" class="fa-solid fa-circle txt-white"></i>
                 </div>
             </div>
         

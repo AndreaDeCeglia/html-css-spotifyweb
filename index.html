@@ -395,8 +395,8 @@
                             
                             <!-- ninth playlist -->
                             <div class="play flex-column justify-between align-center padding-1">
-                                <picture class="p-relative">
-                                    <img class="play-img" src="./assets/img/youg.jpeg" alt="">
+                                <picture id="circle-pic" class="p-relative">
+                                    <img id="circle-img" class="play-img" src="./assets/img/youg.jpeg" alt="">
                                     <i class="fa-regular fa-circle-play txt-white p-absolute-center"></i>
                                 </picture>
                                 <h3 class="txt-white">
@@ -406,8 +406,8 @@
                             
                             <!-- tenth playlist -->
                             <div class="play flex-column justify-between align-center padding-1">
-                                <picture class="p-relative">
-                                    <img class="play-img" src="./assets/img/einaudi.jpeg" alt="">
+                                <picture id="circle-pic" class="p-relative">
+                                    <img id="circle-img" class="play-img" src="./assets/img/einaudi.jpeg" alt="">
                                     <i class="fa-regular fa-circle-play txt-white p-absolute-center"></i>
                                 </picture>
                                 <h3 class="txt-white">
@@ -424,10 +424,72 @@
         </div>
 
         <!-- DOWNER PART - flexed webapp control bar -->
-        <footer class="flex-row justify-between">
-            <div></div>
-            <div></div>
-            <div></div>
+        <footer class="flex-row justify-between align-center">
+            
+            <!-- left part of footer -->
+            <div id="footer-left" class="flex-row justify-between align-center">
+                
+                <!-- copertina più nome brano in esecuzione -->
+                <div id="brano-left" class="basis-69 flex-row justify-between align-center padding-2">
+                    <picture class="basis-39 padding-2">
+                        <img src="./assets/img/sinister.jpeg" alt="">
+                    </picture>
+                    <div class="basis-59">
+                        <h4 class="txt-white">
+                            Sinister
+                        </h4>
+                        <span class="txt-gray">
+                            Brano Nome
+                        </span>
+                    </div>
+                </div>
+
+                <!-- icone Cuore e Cartella -->
+                <div id="icons-left" class="basis-29 flex-column justify-around align-center">
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- central part of footer -->
+            <div id="footer-center" class="flex-column">
+                <div id="icons-center" class="flex-row justify-around align-center">
+                    <div>
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div>
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                </div>
+                <div id="time-count" class="flex-row justify-between align-center">
+                    <span class="txt-gray">0:25</span>
+                    <div class="player-bar">
+                        <div class="controller-elasped percentual-20">
+                            <div class="controller-elapsed-point"></div>
+                        </div>
+                    </div>
+                    <span class="txt-gray">4:35</span>
+                </div>
+            </div>
+
+            <!-- right part of footer -->
+            <div id="footer-right">
+                
+            </div>
+        
         </footer>
     
     </div>
